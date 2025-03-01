@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "HJKL Navigation",
+  "version": "1.0",
+  "description": "Use hjkl keys to navigate webpages like in Vim.",
+  "icons": {
+    "48": "icon.jpg"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
